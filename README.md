@@ -1,2 +1,2 @@
 # career-intelligence
-Career Intelligence Platform for PT Kereta Api Indonesia
+Career Intelligence Platform for Specialist Competency and Growth Model
