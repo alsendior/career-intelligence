@@ -1,0 +1,105 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Career Intelligence v2</title>
+<style>
+:root{
+--kai:#1D2E7A;--orange:#F58220;--bg:#F4F7FB;--card:#fff;
+}
+*{margin:0;padding:0;box-sizing:border-box;font-family:Segoe UI,Arial,sans-serif}
+body{background:var(--bg);color:#263238}
+.header{height:70px;background:var(--kai);color:#fff;display:flex;justify-content:space-between;align-items:center;padding:0 24px;position:fixed;left:0;right:0;top:0;box-shadow:0 2px 10px rgba(0,0,0,.15)}
+.layout{display:flex;margin-top:70px}
+.sidebar{width:250px;background:#fff;min-height:calc(100vh - 70px);padding:20px;border-right:1px solid #e5e7eb}
+.sidebar h3{margin-bottom:18px;color:var(--kai)}
+.sidebar a{display:block;text-decoration:none;color:#334155;padding:12px 14px;border-radius:10px;margin-bottom:6px}
+.sidebar a:hover{background:#eef3ff}
+.content{flex:1;padding:28px}
+.hero{background:linear-gradient(135deg,var(--kai),#3f63ca);color:#fff;padding:40px;border-radius:18px}
+.hero h1{font-size:38px}
+.hero p{margin-top:10px;opacity:.95}
+.search{margin:22px 0}
+.search input{width:100%;padding:15px;border-radius:10px;border:1px solid #d7dce5}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:18px}
+.card{background:#fff;border-radius:16px;padding:20px;box-shadow:0 4px 12px rgba(0,0,0,.08)}
+.big{font-size:34px;font-weight:700;color:var(--kai)}
+.modules{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px;margin-top:24px}
+.ai{margin-top:28px;background:#fff;padding:22px;border-radius:16px;box-shadow:0 4px 12px rgba(0,0,0,.08)}
+textarea{width:100%;height:120px;border:1px solid #ccc;border-radius:10px;padding:12px}
+button{background:var(--orange);color:#fff;border:none;padding:12px 20px;border-radius:10px;margin-top:12px;cursor:pointer}
+footer{text-align:center;padding:24px;color:#64748b}
+@media(max-width:900px){
+.layout{flex-direction:column}
+.sidebar{width:100%;min-height:auto}
+}
+</style>
+</head>
+<body>
+<div class="header">
+<div><strong>🚆 Career Intelligence</strong></div>
+<div>PT Kereta Api Indonesia</div>
+</div>
+
+<div class="layout">
+<div class="sidebar">
+<h3>Navigation</h3>
+<a href="#">🏠 Dashboard</a>
+<a href="#">🧭 Career Architecture</a>
+<a href="#">👤 Job Profile</a>
+<a href="#">📘 Competency Dictionary</a>
+<a href="#">🎓 Learning Catalog</a>
+<a href="#">⭐ Talent</a>
+<a href="#">🤖 AI Assistant</a>
+<a href="#">📊 Analytics</a>
+<a href="#">⚙️ Settings</a>
+</div>
+
+<div class="content">
+
+<div class="hero">
+<h1>Career Intelligence Platform</h1>
+<p>Portal terpadu untuk Career Architecture, Competency, Learning, Talent Management, dan AI Assistant.</p>
+</div>
+
+<div class="search">
+<input placeholder="🔍 Cari Jabatan, Kompetensi, SOP, Learning Program...">
+</div>
+
+<div class="stats">
+<div class="card"><div class="big">18</div>Job Family</div>
+<div class="card"><div class="big">700+</div>Job</div>
+<div class="card"><div class="big">500+</div>Competencies</div>
+<div class="card"><div class="big">200+</div>Learning Program</div>
+</div>
+
+<div class="modules">
+<div class="card"><h3>🧭 Career Architecture</h3><p>Eksplorasi jalur promosi, rotasi, dan pengembangan karier.</p></div>
+<div class="card"><h3>👤 Job Profile</h3><p>Lihat grade, tugas, kompetensi, dan persyaratan jabatan.</p></div>
+<div class="card"><h3>📘 Competency Dictionary</h3><p>Definisi kompetensi beserta level dan indikator perilaku.</p></div>
+<div class="card"><h3>🎓 Learning Catalog</h3><p>Rekomendasi pengembangan berdasarkan kompetensi.</p></div>
+<div class="card"><h3>⭐ Talent Dashboard</h3><p>Talent pool, succession, dan readiness.</p></div>
+<div class="card"><h3>📊 Analytics</h3><p>Ringkasan data Career Intelligence.</p></div>
+</div>
+
+<div class="ai">
+<h2>🤖 AI Career Assistant</h2>
+<p>Contoh pertanyaan:</p>
+<ul>
+<li>Apa jalur karier Manager Sintelis?</li>
+<li>Kompetensi untuk Supervisor Jalan Rel?</li>
+<li>Learning yang direkomendasikan untuk Grade 10?</li>
+</ul>
+<br>
+<textarea placeholder="Tulis pertanyaan Anda..."></textarea><br>
+<button>Ask AI</button>
+</div>
+
+<footer>Career Intelligence v2 Prototype • PT Kereta Api Indonesia</footer>
+
+</div>
+</div>
+</body>
+</html>
