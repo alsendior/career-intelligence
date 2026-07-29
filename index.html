@@ -1,9 +1,10 @@
 
 <!DOCTYPE html>
+
 <html lang="id">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>Career Intelligence v2</title>
 <style>
 :root{
@@ -35,6 +36,9 @@ footer{text-align:center;padding:24px;color:#64748b}
 .layout{flex-direction:column}
 .sidebar{width:100%;min-height:auto}
 }
+
+.card{cursor:pointer;transition:all .25s ease;}
+.card:hover{transform:translateY(-5px);box-shadow:0 10px 25px rgba(29,46,122,.20);}
 </style>
 </head>
 <body>
@@ -42,44 +46,33 @@ footer{text-align:center;padding:24px;color:#64748b}
 <div><strong>🚆 Career Intelligence</strong></div>
 <div>PT Kereta Api Indonesia</div>
 </div>
-
 <div class="layout">
 <div class="sidebar">
 <h3>Navigation</h3>
-<a href="#">🏠 Dashboard</a>
-<a href="#">🧭 Career Architecture</a>
-<a href="#">👤 Job Profile</a>
-<a href="#">📘 Competency Dictionary</a>
-<a href="#">🎓 Learning Catalog</a>
+<a href="index.html">🏠 Dashboard</a>
+<a href="career-architecture.html">🧭 Career Architecture</a>
+<a href="job-profile.html">👤 Job Profile</a>
+<a href="competency.html">📘 Competency Dictionary</a>
+<a href="learning.html">🎓 Learning Catalog</a>
 <a href="#">⭐ Talent</a>
 <a href="#">🤖 AI Assistant</a>
 <a href="#">📊 Analytics</a>
 <a href="#">⚙️ Settings</a>
 </div>
-
 <div class="content">
-
 <div class="hero">
 <h1>Career Intelligence Platform</h1>
 <p>Portal terpadu untuk Career Architecture, Competency, Learning, Talent Management, dan AI Assistant.</p>
 </div>
-
 <div class="search">
-<input placeholder="🔍 Cari Jabatan, Kompetensi, SOP, Learning Program...">
+<input placeholder="🔍 Cari Jabatan, Kompetensi, SOP, Learning Program..."/>
 </div>
-
 <div class="stats">
-<a href="job-family.html" class="card-link">
-    <div class="card">
-        <div class="big">18</div>
-        Job Family
-    </div>
-</a>
+<div class="card" onclick="location.href='job-family.html'" title="Buka Job Family"><div class="big">18</div>Job Family</div>
 <div class="card"><div class="big">700+</div>Job</div>
 <div class="card"><div class="big">500+</div>Competencies</div>
 <div class="card"><div class="big">200+</div>Learning Program</div>
 </div>
-
 <div class="modules">
 <div class="card"><h3>🧭 Career Architecture</h3><p>Eksplorasi jalur promosi, rotasi, dan pengembangan karier.</p></div>
 <div class="card"><h3>👤 Job Profile</h3><p>Lihat grade, tugas, kompetensi, dan persyaratan jabatan.</p></div>
@@ -88,7 +81,6 @@ footer{text-align:center;padding:24px;color:#64748b}
 <div class="card"><h3>⭐ Talent Dashboard</h3><p>Talent pool, succession, dan readiness.</p></div>
 <div class="card"><h3>📊 Analytics</h3><p>Ringkasan data Career Intelligence.</p></div>
 </div>
-
 <div class="ai">
 <h2>🤖 AI Career Assistant</h2>
 <p>Contoh pertanyaan:</p>
@@ -97,13 +89,11 @@ footer{text-align:center;padding:24px;color:#64748b}
 <li>Kompetensi untuk Supervisor Jalan Rel?</li>
 <li>Learning yang direkomendasikan untuk Grade 10?</li>
 </ul>
-<br>
-<textarea placeholder="Tulis pertanyaan Anda..."></textarea><br>
+<br/>
+<textarea placeholder="Tulis pertanyaan Anda..."></textarea><br/>
 <button>Ask AI</button>
 </div>
-
 <footer>Career Intelligence v2 Prototype • PT Kereta Api Indonesia</footer>
-
 </div>
 </div>
 </body>
